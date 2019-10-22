@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+	<head>
+		<title> Student Login Page </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </link>
+		<style>
+			#cont{ background-color:#f1f1f1;
+			       border:1px solid #e5e5e5;
+			       border-radius:4px;
+			       margin-top:150px;
+			       height:400px;
+			       z-index:1;
+			       box-shadow:3px 6px 6px grey;
+			       width:25%; }
+			#student{ font-family:comic sans ms;
+				  font-size:35px;
+				  color:#31708f; }
+			input[type=text]{ width:80%;
+					  padding: 0;
+  					  height: 30px;
+  					  position: relative;
+					  border-radius:4px;
+					  font-family:comic sans ms;
+ 	    				  left: 0;
+  				  	  outline: none;
+ 	 				  border: 1px solid #cdcdcd;
+  					  border-color: rgba(0, 0, 0, .15);
+  					  background-color: white;
+  					  font-size: 16px; }
+			input[type=password]{ width:80%;
+					      padding: 0;
+  					      height: 30px;
+ 					      position: relative;
+					      border-radius:4px;
+					      font-family:comic sans ms;
+  					      left: 0;
+  					      outline: none;
+  					      border: 1px solid #cdcdcd;
+  					      border-color: rgba(0, 0, 0, .15);
+  					      background-color: white;
+  					      font-size: 16px; }
+			#check{ position:relative;
+				left:-95px; }
+			#check:hover{ cursor:pointer; }
+			#remember{ position:relative;
+				   font-size:15px;
+				   font-family:comic sans ms;
+				   left:-100px; }
+			.button { display: inline-block;
+  				  border-radius: 8px;
+  				  background-color: #337ab7;
+  				  border: none;
+    				  color: #FFFFFF;
+   				  text-align: center;
+  				  padding: 8px 16px;
+  				  transition: all 0.5s;
+				  position:relative;
+				  left:-120px;
+  				  cursor: pointer;
+  				  margin: 5px; }
+			.button span { cursor: pointer;
+ 	 			       display: inline-block;
+  				       position: relative;
+  				       transition: 0.5s;}
+			.button span:after { content: '\00bb';
+  					     position: absolute;
+  					     opacity: 0;
+  					     top: 0;
+  					     right: -20px;
+  					     transition: 0.5s; }
+			.button:hover span { padding-right: 25px;}
+			.button:hover span:after { opacity: 1;
+  						   right: 0; }
+			#forgot:link{ text-decoration:none;
+				      font-size:12px;
+				      font-family:comic sans ms;
+				      position:relative;
+				      left:-65px;
+		 	              color:blue; }
+			#forgot:hover{ color:red;
+				       cursor:pointer; }
+			#ques{ font-family:comic sans ms;
+			       position:relative;
+			       bottom:-40px; }
+			#register:link{ text-decoration:none;
+					font-family:comic sans ms;
+					position:relative;
+					bottom:-40px;
+		 	        	color:blue; }
+			#register:hover{ color:red;
+				 	 cursor:pointer }
+			hr{ width:25%; }
+			#return:link{ text-decoration:none;
+				      font-family:comic sans ms;
+				      font-size:15px;
+		 	              color:blue; }
+			#return:hover{ color:red;
+				       cursor:pointer }
+		</style>
+	</head>
+	<body background="E:\Web Development programs\background.jpg">
+		<center>
+			<div id="cont">
+				<form>
+					<center> <h2 id="student"> Student Login </h2> </center> 
+					<input type="text" placeholder="Username or Student Id" size="40px" name="stuid" maxlength="40px" />
+					<input type="password" placeholder="Password" size="40x" name="password" /> <br /> 
+	 				<input type="checkbox" id="check" />
+					<label id="remember"> Remember me </label> <br /> <br />
+					<a href="Student Page.xhtml"> <button type="submit" class="button"> <span> Login </span> </button> </a> <br />
+					<a href="Forgot Password Student.xhtml" id="forgot"> Forgot username or password?? </a> <br />
+					<label id="ques"> New user? </label>
+					<a href="Register Student.xhtml" id="register"> Register </a>
+				</form>
+			</div> <br />
+			<p style="font-family:comic sans ms"> &copy; Web &amp; Software Development Cell, NIT Andhra </p> <hr />
+			<i class="fa fa-caret-square-o-left"> </i>
+			<a href="CSE Website.xhtml" id="return"> NIT Andhra Homepage </a>
+		</center>
+	</body>
+</html>

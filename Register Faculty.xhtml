@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+	<head>
+		<title> Register Faculty </title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </link>
+		<style>
+			#cont{ background-color:#f1f1f1;
+			       border:1px solid #e5e5e5;
+			       border-radius:4px;
+			       margin-top:50px;
+			       height:730px;
+			       z-index:1;
+			       box-shadow:3px 6px 6px grey;
+			       width:35%; }
+			#faculty{ font-family:comic sans ms;
+				  font-size:35px;
+				  color:#31708f; }
+			#username{ font-size:16px;
+				   position:relative;
+				   left:-143px;
+				   font-family:comic sans ms; }
+			#facid{ font-size:16px;
+				position:relative;
+				left:-165px;
+				font-family:comic sans ms; }
+			#mail{ font-size:16px;
+			       position:relative;
+		               left:-175px;
+			       font-family:comic sans ms; }
+			#crpwd{ font-size:16px;
+				position:relative;
+				left:-45px;
+				font-family:comic sans ms; }
+			#cnpwd{ font-size:16px;
+				position:relative;
+				left:-141px;
+				font-family:comic sans ms; }
+			#security{ font-size:16px;
+				   position:relative;
+				   left:-135px;
+				   font-family:comic sans ms; }
+			input[type=text]{ width:80%;
+					  padding: 0;
+  					  height: 30px;
+  					  position: relative;
+					  border-radius:4px;
+					  font-family:comic sans ms;
+ 	    				  left: 0;
+  				  	  outline: none;
+ 	 				  border: 1px solid #cdcdcd;
+  					  border-color: rgba(0, 0, 0, .15);
+  					  background-color: white;
+  					  font-size: 16px; }
+			input[type=password]{ width:80%;
+					      padding: 0;
+  					      height: 30px;
+ 					      position: relative;
+					      border-radius:4px;
+					      font-family:comic sans ms;
+  					      left: 0;
+  					      outline: none;
+  					      border: 1px solid #cdcdcd;
+  					      border-color: rgba(0, 0, 0, .15);
+  					      background-color: white;
+  					      font-size: 16px; }
+			select{ width:80%;
+				font-size:16px;
+				font-family:comic sans ms;
+				border-radius:4px;
+				padding: 0;
+  				height: 30px;
+ 				position: relative;
+				left: 0;	
+				outline: none;
+  				border: 1px solid #cdcdcd;
+  				border-color: rgba(0, 0, 0, .15);
+  				background-color: white; }
+			.button { display: inline-block;
+  				  border-radius: 8px;
+  				  background-color: #337ab7;
+  				  border: none;
+    				  color: #FFFFFF;
+   				  text-align: center;
+  				  padding: 8px 16px;
+  				  transition: all 0.5s;
+  				  cursor: pointer;
+  				  margin: 5px; }
+			#register{position:relative;
+				  left:-130px; }
+			#clear{position:relative;
+				  left:135px; }
+			.button span { cursor: pointer;
+ 	 			       display: inline-block;
+  				       position: relative;
+  				       transition: 0.5s;}
+			.button span:after { content: '\00bb';
+  					     position: absolute;
+  					     opacity: 0;
+  					     top: 0;
+  					     right: -20px;
+  					     transition: 0.5s; }
+			.button:hover span { padding-right: 25px;}
+			.button:hover span:after { opacity: 1;
+  						   right: 0; }
+			#ques{ font-family:comic sans ms;
+			       position:relative;
+			       bottom:-25px; }
+			#login:link{ text-decoration:none;
+				     font-family:comic sans ms;
+				     position:relative;
+				     bottom:-25px;
+		 	             color:blue; }
+			#login:hover{ color:red;
+				      cursor:pointer }
+			hr{ width:25%; }
+			#return:link{ text-decoration:none;
+				      font-family:comic sans ms;
+				      font-size:15px;
+		 	              color:blue; }
+			#return:hover{ color:red;
+				       cursor:pointer }
+		</style>
+	</head>
+	<body background="E:\Web Development programs\background.jpg">
+		<center>
+			<div id="cont">
+				<form>
+					<h2 id="faculty"> Register Faculty </h2>
+					<label id="username"> Create Username &colon; </label> <br />
+					<input type="text" placeholder="Username" size="40px" name="username" maxlength="40px" /> <br />
+					<label id="facid"> Faculty Id &colon; </label> <br />
+					<input type="text" placeholder="Reg No" size="40px" name="facid" maxlength="40px" /> <br />
+					<label id="mail"> Email Id &colon; </label> <br />
+					<input type="text" placeholder="Email Id" size="40px" name="mailid" maxlength="40px" /> <br />
+					<label id="crpwd"> Create Password &colon; <span style="color:red;font-size:12px"> *(min 8 alphanumerical characters) </span> </label> <br />
+					<input type="password" placeholder="Password" size="40x" name="password" /> <br />
+					<label id="cnpwd"> Confirm Password &colon; </label> <br />
+					<input type="password" placeholder="Password" size="40x" name="password" /> <br />
+					<label id="security"> Security Questions &colon; </label> <br />
+					<select>
+						<option select="selected"> | Question 1 </option>
+						<option> What is the first name of your best friend in high school? </option>
+						<option> What was the name of your first pet? </option>
+						<option> What was the first thing you learned to cook? </option>
+						<option> What was the first film yousaw in the theatre? </option>
+						<option> Where did you go the first time you flew on a plane? </option>
+						<option> What is the last name of your favourite elementary school teacher? </option>
+					</select>
+					<input type="text" placeholder="Answer for Question 1" size="40px" name="ans1" maxlength="40px" /> <br />
+					<select>
+						<option select="selected"> | Question 2 </option>
+						<option> What is the first name of your best friend in high school? </option>
+						<option> What was the name of your first pet? </option>
+						<option> What was the first thing you learned to cook? </option>
+						<option> What was the first film yousaw in the theatre? </option>
+						<option> Where did you go the first time you flew on a plane? </option>
+						<option> What is the last name of your favourite elementary school teacher? </option>
+					</select>
+					<input type="text" placeholder="Answer for Question 2" size="40px" name="ans1" maxlength="40px" /> <br />
+					<select>
+						<option select="selected"> | Question 3 </option>
+						<option> What is the first name of your best friend in high school? </option>
+						<option> What was the name of your first pet? </option>
+						<option> What was the first thing you learned to cook? </option>
+						<option> What was the first film yousaw in the theatre? </option>
+						<option> Where did you go the first time you flew on a plane? </option>
+						<option> What is the last name of your favourite elementary school teacher? </option>
+					</select>
+					<input type="text" placeholder="Answer for Question 3" size="40px" name="ans1" maxlength="40px" /> <br /> <br />
+					<a href="Faculty Login.xhtml"> <button type="submit" class="button" id="register"> <span> Register </span> </button> </a>
+					<button type="reset" class="button" id="clear"> <span> Clear </span> </button> <br /> 
+					<label id="ques"> Existing user? </label>
+					<a href="Student Login.xhtml" id="login"> Login </a>
+				</form>
+			</div> <br />
+			<p style="font-family:comic sans ms"> &copy; Web &amp; Software Development Cell, NIT Andhra </p> <hr />
+			<i class="fa fa-caret-square-o-left"> </i>
+			<a href="CSE Website.xhtml" id="return"> NIT Andhra Homepage </a>
+		</center>
+	</body>
+</html>

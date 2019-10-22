@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+	<head> 
+		<title> "CSE Website" </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </link>
+		<style>
+			#logo{ padding-left:130px;
+			       padding-top:10px; }
+			#nit1{ position:absolute;
+			       color:DodgerBlue;
+			       left:270px; 
+			       top:30px; }
+			#nit2{ position:absolute;
+			       color:Gray;
+			       left:273px; 
+			       top:50px; }
+			#nit3{ position:absolute;
+			       color:DodgerBlue;
+			       left:270px; 
+			       top:70px; }
+			#mhrdlogo{ position:absolute;
+				   padding-top:10px;
+				   right:100px; }
+			select{ background-color:transparent;
+			        position:relative;
+			        left:150px;
+			        border:none;
+				font-family:comic sans ms;
+			        width:150px;
+			        height:30px;
+			        font-size:15px; }
+			select:hover{ opacity:0.5;
+				      cursor:pointer;
+				      font-weight:bold; }
+			#bar{ height:30px; }
+			.cont{ height:530px;
+			 	width:80%;
+				margin-top:30px;
+				border:1px solid #e5e5e5;}
+			#vision, #mission, #announcements{ width:60%;
+					   position:relative;
+			 		   top:50px; }
+			#vision1, #mission1, #announcements1{ background-color:#bce8f1;}
+			li{ text-align:left; }
+			#bottom{ background-color:#bce8f1;
+				 height:150px;
+				 width:100%;
+				 position:relative; }
+			a:link{ text-decoration:none;
+		 	        color:blue; }
+			a:hover{ color:red;
+				 cursor:pointer; }
+		</style>
+	</head>
+	<body style="font-family:comic sans ms">
+		<img id="logo" src="E:\Web Development programs\logo.png" alt="NIT AP Logo" width="132px" height="116px" />
+		<h3 id="nit1"> NATIONAL INSTITUTE OF TECHNOLOGY ANDHRA PRADESH </h3>
+		<h5 id="nit2"> ( An autonomous Institute under the aegis of Ministry of HRD, Govt. of India ) </h5>
+		<h2 id="nit3"> DEPARTMENT OF COMPUTER SCIENCE &amp; ENGINEERING </h2>
+ 		<img id="mhrdlogo" src="E:\Web Development programs\mhrd-logo.jpg" alt="MHRD Logo" width="146px" height="110px" /> <br />
+		<div style="background-color:lightblue" id="bar">
+			<select onchange="location = this.value;">	
+				<option select="selected"> | Home </option>
+				<option value=""> MoU </option>
+			</select>
+			<select onchange="location = this.value;">	
+				<option select="selected"> |   Faculty </option>
+				<option value=""> Dr. Karthick S (HOD) </option>
+				<option value=""> Dr. K Himabindu </option>
+				<option value=""> Dr. Nagesh Bhattu </option>
+				<option value=""> Dr. Goutham Reddy </option>
+				<option value=""> Mr. Raghavarao Manubrolu </option>
+				<option value=""> Ms. Soumya Sudha </option>
+				<option value=""> Dr. Srilatha Chebrolu </option>
+			</select>
+			<select onchange="location = this.value;">	
+				<option select="selected"> | Students   </option>
+				<option value=""> II Year </option>
+				<option value=""> III Year </option>
+				<option value=""> IV Year </option>
+			</select>
+			<select onchange="location = this.value;">	
+				<option select="selected"> | Laboratories   </option>
+				<option value=""> PSCP Lab </option>
+				<option value=""> DBMS Lab </option>
+				<option value=""> ASR Lab </option>
+			</select>
+			<select onchange="location = this.value;">	
+				<option select="selected"> | Gallery </option>
+			</select>
+			<select onchange="location = this.value;">	
+				<option select="selected"> | Achievements  </option>
+				<option value=""> Publications </option>
+				<option value=""> Internships </option>
+				<option value=""> Intra-College </option>
+				<option value=""> Faculty </option>
+			</select>
+			<select onchange="location = this.value;">	
+				<option select="selected"> | Contact </option>
+			</select>
+		</div>
+		<center>
+			<div class="cont">
+			<div id="vision">
+				<h3 id="vision1"> Vision </h3>
+				<p> 
+					To achieve excellence in technical education by imparting world class teaching and best practices of research, consultancy and outreach activities. 		
+				</p>
+			</div>
+			<div id="mission">
+				<h3 id="mission1"> Mission </h3>
+				<ul>
+					<li> To produce globally competent technocrats through research, innovation and entrepreneurship. </li>
+					<li> To create conducive environment for carrying out research in cutting edge areas and thereby generate new knowledge. </li>
+					<li> To develop coordination among stakeholders for mutual benefit. </li>
+					<li> To address societal needs for achieving self-sustainability. </li>
+				</ul>
+			</div>
+			<div id="announcements">
+				<h3 id="announcements1"> Announcements </h3>
+				<ul>
+					<li> List of candidates selected for regular faculty positions against advertisement no.: NITAP/TS/2019-20/001 dated 28.06.2019 <a href="#"> (click here) </a> </li>
+					<li> B.Tech I Semester mid examination 2019-20 timetable <a href="#"> (click here) </a> </li>
+					<li> 
+						JRF Shortlisted Candidates for the project titled "National Center for Development of Advanced Materials and Manufacturing Processes for Clean Coal Technologies for Power Applications" 
+						<a href="#"> (click here) </a>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</center><br /> <br /> <br />  
+		<div id="bottom">
+			<br />
+			<a href="Student Login.xhtml" style="padding-left:20px"> Student Login </a>
+			<a href="Faculty Login.xhtml" style="position:absolute;right:20px"> Faculty Login </a>
+			<br /> <br />
+			<center> 
+				<p> THIS WEBSITE BELONGS TO NATIONAL INSTITUTE OF TECHNOLOGY, ANDHRA PRADESH COPYRIGHT &copy; 2019 - ALL RIGHTS RESERVED - NIT ANDHRA PRADESH </p>
+				<p> Follow us on &colon; <a href="https://www.facebook.com/NITANDHRA2015/?modal=admin_todo_tour"> <i class="fa fa-facebook-square" style="font-size:20px"> </i> </a> &nbsp; <a href="https://www.instagram.com/nitandhra/"> <i class="fa fa-instagram" style="font-size:20px"> </i> </a> &nbsp; <a href="https://twitter.com/NITANDHRA2015"> <i class="fa fa-twitter" style="font-size:20px"> </i> </a> &nbsp; <a href="https://www.youtube.com/channel/UCrXR6gvnN47WAP2QFoBXWfQ"> <i class="fa fa-youtube" style="font-size:20px"> </i> </a> </p>
+			</center>
+		</div>	
+	</body>
+</html>

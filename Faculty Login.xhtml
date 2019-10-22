@@ -97,17 +97,22 @@
 			#return:hover{ color:red;
 				       cursor:pointer }
 		</style>
+		<script type="text/javascript">
+			function redirect(){
+				window.open("Faculty Page.xhtml");
+			}
+		</script>
 	</head>
-	<body background="E:\Web Development programs\background.jpg">
+	<body background="background.jpg">
 		<center>
 			<div id="cont">
-				<form>
+				<form onsubmit="redirect()">
 					<center> <h2 id="Faculty"> Faculty Login </h2> </center> 
 					<input type="text" placeholder="Username or Faculty Id" size="40px" name="facid" maxlength="40px" />
 					<input type="password" placeholder="Password" size="40x" name="password" /> <br /> 
 	 				<input type="checkbox" id="check" />
 					<label id="remember"> Remember me </label> <br /> <br />
-					<a href="Faculty Page.xhtml"> <button type="submit" class="button"> <span> Login </span> </button> </a> <br />
+					<button type="submit" class="button"> <span> Login </span> </button> <br />
 					<a href="Forgot Password Faculty.xhtml" id="forgot"> Forgot username or password?? </a> <br />
 					<label id="ques"> New user? </label>
 					<a href="Register Faculty.xhtml" id="register"> Register </a>

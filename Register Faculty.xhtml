@@ -122,11 +122,16 @@
 			#return:hover{ color:red;
 				       cursor:pointer }
 		</style>
+		<script type="text/javascript">
+			function redirect(){
+				window.open("Faculty Login.xhtml");
+			}
+		</script>
 	</head>
-	<body background="E:\Web Development programs\background.jpg">
+	<body background="background.jpg">
 		<center>
 			<div id="cont">
-				<form>
+				<form  onsubmit="redirect()">
 					<h2 id="faculty"> Register Faculty </h2>
 					<label id="username"> Create Username &colon; </label> <br />
 					<input type="text" placeholder="Username" size="40px" name="username" maxlength="40px" /> <br />
@@ -169,7 +174,7 @@
 						<option> What is the last name of your favourite elementary school teacher? </option>
 					</select>
 					<input type="text" placeholder="Answer for Question 3" size="40px" name="ans1" maxlength="40px" /> <br /> <br />
-					<a href="Faculty Login.xhtml"> <button type="submit" class="button" id="register"> <span> Register </span> </button> </a>
+					<button type="submit" class="button" id="register"> <span> Register </span> </button>
 					<button type="reset" class="button" id="clear"> <span> Clear </span> </button> <br /> 
 					<label id="ques"> Existing user? </label>
 					<a href="Student Login.xhtml" id="login"> Login </a>

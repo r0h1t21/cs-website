@@ -1,1 +1,1 @@
-# Website
+# Sample College Website

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+	<head> 
+		<title> Student page </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </link> 
+		<style>
+			#logo{ padding-left:130px;
+			       padding-top:10px; }
+			#nit1{ position:absolute;
+			       font-size:18px;
+			       color:DodgerBlue;
+			       left:270px; 
+			       top:30px; }
+			#nit2{ position:absolute;
+			       color:Gray;
+			       font-size:13px;
+			       left:273px; 
+			       top:50px; }
+			#nit3{ position:absolute;
+			       color:DodgerBlue;
+			       font-size:20px;
+			       left:270px; 
+			       top:70px; }
+			#cont1{ background-color:#e8e8e8;
+				border-radius:4px; }
+			#cont3{ height:500px;
+				position:relative;
+				top:-30px;
+				width:100%; }
+			#cont4{ background-color:#e8e8e8;
+				border-radius:4px;
+				position:relative;
+				top:670px;
+				height:100px;
+				width:99%;
+				position:absolute;
+				bottom:0px; }
+			#profile{ position:absolute;
+				  padding-top:60px;
+				  right:150px; }			 
+			#username{ font-family:comic sans ms;
+				   font-size:15px;
+			           position:absolute;
+			           opacity:0.5;
+			           top:70px;
+			           right:220px; }
+			#username:hover{ opacity:1; }
+			select{ background-color:transparent;
+			            font-family:comic sans ms;
+			            position:absolute;
+			            opacity:0.7;
+			            top:90px;
+			            right:200px;
+			            border:none; }
+			select:hover{ opacity:1;
+				      cursor:pointer; }
+			ul{ list-style-type: none;
+ 			    margin: 0;
+  			    padding: 0;
+  			    overflow: hidden;
+  			    background-color: #333; }
+
+			li{ float: left; }
+			li a, .dropbtn{ display: inline-block;
+  					color: white;
+  					text-align: center;
+  					padding: 14px 16px;
+  					text-decoration: none; }
+			li a:hover, .dropdown:hover .dropbtn{ background-color: dodgerblue; }
+			li.dropdown{ display: inline-block; }
+			.dropdown-content{ display: none;
+  					   position: absolute;
+  					   background-color: #f9f9f9;
+  					   min-width: 160px;
+  					   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  					   z-index: 1; }
+			.dropdown-content a{ color: black;
+  					     padding: 12px 16px;
+  					     text-decoration: none;
+  					     display: block;
+  					     text-align: left; }
+			.dropdown-content a:hover{ background-color: #f1f1f1; }
+			.dropdown:hover .dropdown-content{ display: block; }
+			#right{ float:right; }
+		</style>
+	</head>
+	<body style="font-family:comic sans ms">
+		<div id="cont1">
+			<img id="logo" src="logo.png" alt="NIT AP Logo" width="132px" height="116px" />
+			<h3 id="nit1"> NATIONAL INSTITUTE OF TECHNOLOGY ANDHRA PRADESH </h3>
+			<h5 id="nit2"> ( An autonomous Institute under the aegis of Ministry of HRD, Govt. of India ) </h5>
+			<h2 id="nit3"> DEPARTMENT OF COMPUTER SCIENCE &amp; ENGINEERING </h2>
+			<label id="username"> MANIDEEP MALLIREDDY </label>
+			<select disabled="disabled">
+				<option select="selected"> manideepmallireddy@gmail.com </option>
+				<option> My Profile </option>
+				<option> Logout </option>
+			</select>
+			<img id="profile" src="Profile.png" alt="icon" width="40px" height="40px" />
+		</div>
+		<div id="cont2">
+			<ul>
+				<li><a href="Student Page.xhtml">Home</a></li>
+  				<li class="dropdown">
+    					<a href="javascript:void(0)" class="dropbtn">Papers</a>
+    					<div class="dropdown-content">
+      						<a href="">Link 1</a>
+      						<a href="#">Link 2</a>
+      						<a href="#">Link 3</a>
+    					</div>
+  				</li>
+				<li class="dropdown">
+    					<a href="javascript:void(0)" class="dropbtn">Journals</a>
+    					<div class="dropdown-content">
+      						<a href="#">Link 1</a>
+      						<a href="#">Link 2</a>
+      						<a href="#">Link 3</a>
+    					</div>
+  				</li>
+				<li class="dropdown">
+    					<a href="javascript:void(0)" class="dropbtn">Courses</a>
+    					<div class="dropdown-content">
+      						<a href="#">Link 1</a>
+      						<a href="#">Link 2</a>
+      						<a href="#">Link 3</a>
+    					</div>
+  				</li>
+				<li class="dropdown">
+    					<a href="javascript:void(0)" class="dropbtn">Syllabus</a>
+    					<div class="dropdown-content">
+      						<a href="#">Link 1</a>
+      						<a href="#">Link 2</a>
+      						<a href="#">Link 3</a>
+    					</div>
+  				</li>
+				<li id="right"> <a href="javascript:void(0)">Contact</a> </li>
+			</ul>
+		</div>
+		<div id="cont3" style="background-image:url(banner.jpg); background-size:cover; background-repeat:no-repeat">
+			<h1 style="font-family:times new roman; font-size:40px; position:relative; top:20px; left:40px"> Better Education for Better Future </h1> <br />
+			<h3 style="position:relative; top:130px; left:40px"> Important Links </h3>
+			<a href="https://edu.google.com/?modal_active=none" style="position:relative; top:140px; left:40px; color:red"> google.com/edu </a> <br />
+			<a href="https://edu.google.com/products/gsuite-for-education/?modal_active=none" style="position:relative; top:145px; left:40px; color:red"> Google products for 			students </a> <br />
+			<a href="https://edu.google.com/products/gsuite-for-education/?modal_active=none" style="position:relative; top:150px; left:40px; color:red"> Learn more about 			Google Apps for Education </a> <br />
+		</div> <br />
+		<div id="cont4">
+			<center>
+				<p style="font-family:comic sans ms"> &copy; Web &amp; Software Development Cell, NIT Andhra </p> <hr />
+				<i class="fa fa-caret-square-o-left"> </i>
+				<a href="CSE Website.xhtml" id="return"> NIT Andhra Homepage </a>
+			</center>
+		</div>
+	</body>
+</html>

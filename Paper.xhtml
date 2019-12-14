@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
 	<head> 
-		<title> Student Page </title>
+		<title> Paper </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </link> 
 		<style>
@@ -26,14 +26,10 @@
 			#cont1{ background-color:#e8e8e8;
 				width:100%;
 				border-radius:4px; }
-			#cont3{ height:500px;
-				position:relative;
-				top:-30px;
-				width:100%; }
-			#cont4{ background-color:#e8e8e8;
+          		#cont4{ background-color:#e8e8e8;
 				border-radius:4px;
 				position:relative;
-				top:670px;
+				top:500px;
 				height:150px;
 				width:98.9%;
 				position:absolute;
@@ -85,6 +81,10 @@
 			.dropdown-content a:hover{ background-color: #f1f1f1; }
 			.dropdown:hover .dropdown-content{ display: block; }
 			#right{ float:right; }
+			input[type="file"] { display: none; }
+			.file-upload { display: inline-block;
+       				       padding: 6px 12px;
+                                       cursor: pointer; }
 		</style>
 	</head>
 	<body style="font-family:comic sans ms">
@@ -105,7 +105,7 @@
 			<ul>
 				<li><a href="Student Page.xhtml">Home</a></li>
   				<li class="dropdown">
-    					<a href="Paper.xhtml" class="dropbtn">Papers</a>
+    					<a href="javascript:void(0)" class="dropbtn">Papers</a>
   				</li>
 				<li class="dropdown">
     					<a href="https://www.sciencedirect.com/journal/applied-computing-and-informatics" class="dropbtn">Journals</a>
@@ -131,20 +131,28 @@
 				<li id="right"> <a href="javascript:void(0)">Contact us</a> </li>
 			</ul>
 		</div>
-		<div id="cont3" style="background-image:url(banner.jpg); background-size:cover; background-repeat:no-repeat">
-			<h1 style="font-family:times new roman; font-size:40px; position:relative; top:20px; left:40px"> Better Education for Better Future </h1> <br />
-			<h3 style="position:relative; top:180px; left:40px"> Important Links </h3>
-			<a href="https://edu.google.com/?modal_active=none" style="position:relative; top:190px; left:40px; color:red"> google.com/edu </a> <br />
-			<a href="https://edu.google.com/products/gsuite-for-education/?modal_active=none" style="position:relative; top:195px; left:40px; color:red"> Google products for students </a> <br />
-			<a href="https://edu.google.com/products/gsuite-for-education/?modal_active=none" style="position:relative; top:200px; left:40px; color:red"> Learn more about Google Apps for Education </a> <br />
-		</div> <br />
+		<div id="cont3">
+			<table>
+				<tbody>
+					<tr>
+						<td> </td>
+						<td>
+							<label for="choose" class="file-upload">
+								<i class="fa fa-cloud-upload"></i> Upload Papers
+								<input type="file" id="choose"/>
+							</label>
+						</td>
+					</tr>
+				</tbody>
+			</table>	
+		</div>
 		<div id="cont4">
-			<center>
-				<p style="font-family:comic sans ms"> &copy; Web &amp; Software Development Cell, NIT Andhra </p> 
-				<p style="font-family:comic sans ms"> Drop us an Email on <a href="#"> <i class="fa fa-envelope"></i>  web@nitandhra.ac.in </a> </p> <hr />
-				<i class="fa fa-caret-square-o-left"> </i>
-				<a href="CSE Website.xhtml" id="return"> NIT Andhra Homepage </a>
-			</center>
+		<center>
+			<p style="font-family:comic sans ms"> &copy; Web &amp; Software Development Cell, NIT Andhra </p> 
+			<p style="font-family:comic sans ms"> Drop us an Email on <a href="#"> <i class="fa fa-envelope"></i>  web@nitandhra.ac.in </a> </p> <hr />
+			<i class="fa fa-caret-square-o-left"> </i>
+			<a href="CSE Website.xhtml" id="return"> NIT Andhra Homepage </a>
+		</center>
 		</div>
 	</body>
 </html>

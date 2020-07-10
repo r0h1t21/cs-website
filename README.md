@@ -1,13 +1,13 @@
 # Sample College Website for Department of Computer Science and Engineering
 
-Home Page:
+## Home Page:
 
 ![alt text](home.png)
 
-Student Login Page:
+## Student Login Page:
 
-![alt text](student login.png)
+![alt text](student_login.png)
 
-Student Login Portal:
+## Student Login Portal:
 
-![alt text](student portal.png)
+![alt text](student_portal.png)
